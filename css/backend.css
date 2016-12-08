@@ -1,0 +1,82 @@
+.backend .graphic{
+	background-color: #CF4D09;
+}
+.backend .graphic_add{
+	background-color: #d35e21;
+}
+.backend .graphic_check{
+	background-color: #ba4508;
+}
+.backend .web{
+	background-color: #04687A;
+}
+.backend .web_add{
+	background-color: #1d7787;
+}
+.backend .web_check{
+	background-color: #035d6d;
+}
+.backend textarea{
+	height: 100px;
+}
+@media screen and (min-width: 481px){
+.logo_backend{
+	margin-top: 100px;
+	clear: both;
+}
+.error{
+	padding-top:80px;
+	font-size: 18px;
+	text-align: center;
+}
+.backend .button{
+	display: block;
+	height: 300px;
+	line-height: 300px;
+	margin: 20vh auto 0 auto;
+	text-align: center;
+	color: #fff!important;
+	font-size: 26px;
+}
+.backend h1{
+	margin-top: 80px;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 26px;
+}
+.backend .graphic_thumb{
+	width: 100px;
+}
+.backend .web_thumb{
+	width: 100px;
+}
+.graphic_modify .thumb , .graphic_modify .real,.web_modify .thumb , .web_modify .real{
+	width: 100px;
+}
+}
+@media screen and (max-width: 480px){
+.logo_backend{
+	margin-top: 80px;
+}
+.error{
+	font-size: 10px;
+	text-align: center;
+}
+.backend .button{
+	margin-top: 80px;
+	display: block;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	color: #fff!important;
+	font-size: 20px;
+}
+.backend h1{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 16px;
+}
+.backend textarea{
+	height: 80px;
+}
+}

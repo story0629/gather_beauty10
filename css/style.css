@@ -1,0 +1,29 @@
+.top80{
+	transform:translate(0,80px);
+	}
+.top60{
+	transform:translate(0,60px);
+}
+.home{
+	background-image: url(../images/home.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+@media screen and (min-width:1080px){
+	.fixed-width{
+		width: 1080px;
+		margin: auto;
+	}
+}
+@media screen and (max-width:1079px) and (min-width:481px){
+	.fixed-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width:480px){
+	.fixed-width{
+		width: 100%;
+	}
+}
