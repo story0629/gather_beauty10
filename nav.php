@@ -48,9 +48,9 @@
 				<li><a href="product.php">建案介紹</a></li>
                 <li><a href="news.php">最新消息</a></li>
                 <li><a href="about.php">關於拾美</a></li>
-                <li><a href="login.php">會員登入</a></li>
+                <li><a href="backend/login.php">會員登入</a></li>
 			</ul>
-			</div>
+		</div>
 	</nav>
 </body>
 </html>

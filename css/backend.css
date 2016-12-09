@@ -1,28 +1,6 @@
-.backend .graphic{
-	background-color: #CF4D09;
-}
-.backend .graphic_add{
-	background-color: #d35e21;
-}
-.backend .graphic_check{
-	background-color: #ba4508;
-}
-.backend .web{
-	background-color: #04687A;
-}
-.backend .web_add{
-	background-color: #1d7787;
-}
-.backend .web_check{
-	background-color: #035d6d;
-}
-.backend textarea{
-	height: 100px;
-}
 @media screen and (min-width: 481px){
-.logo_backend{
-	margin-top: 100px;
-	clear: both;
+.logo_backend img{
+	width: 200px;
 }
 .error{
 	padding-top:80px;
