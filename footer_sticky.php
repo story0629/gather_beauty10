@@ -6,6 +6,7 @@
 	<title>index</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
         html {

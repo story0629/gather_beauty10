@@ -1,3 +1,10 @@
+<?php 
+	require_once("connect_database.php"); 
+	$sql = "SELECT * FROM `about`";
+	$result = mysql_query($sql);
+	$row = mysql_fetch_assoc($result);
+?>
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -21,34 +28,63 @@
     	$(function(){
     		var h = $(window).height();
     		var navH = $("nav").height();
-    		var footerH = $("footer").height(); 
-    		$(".home,footer").css("height",h-navH-footerH);
+    		// var footerH = $("footer").height(); 
+    		var footerH = 0; 
+    		$(".home").css("height",h-navH-footerH);
     		var w = $(window).width();
     		if(w>700){
-    			$(".home,footer").addClass("top80");
+    			$(".home,.about,footer").addClass("top80");
     		}else{
-    			$(".home,footer").addClass("top60");
+    			$(".home,.about,footer").addClass("top60");
     		};
     		$(window).resize(function(){
     			var h = $(window).height();
     			var navH = $("nav").height();
-    			var footerH = $("footer").height(); 
+    			// var footerH = $("footer").height(); 
+    			var footerH = 0; 
     			$(".home").css("height",h-navH-footerH);
     			var w = $(window).width();
 	    		if(w>700){
-	    			$(".home,footer").removeClass("top60");
-	    			$(".home,footer").addClass("top80");
+	    			$(".home,.about,footer").removeClass("top60");
+	    			$(".home,.about,footer").addClass("top80");
 	    		}else{
-	    			$(".home,footer").removeClass("top80");
-	    			$(".home,footer").addClass("top60");
+	    			$(".home,.about,footer").removeClass("top80");
+	    			$(".home,.about,footer").addClass("top60");
 	    		};
+	    	});
+	    	$(".mouse").click(function(){
+	    		$("html,body").animate({
+	    			scrollTop:$(window).height(),
+	    		},5000)
 	    	});
 		});
     </script>
 </head>
 <body>
 	<?php include_once("nav.php"); ?>
-	<div class="home full-width"></div>	
+	<div class="home full-width">
+		<div class="mouse">
+			<img src="images/mouse.png" alt="">
+		</div>
+	</div>	
+	<div class="about full-width">
+		<div class="fixed-width">
+			<h2>關於拾美地產</h2>
+			<div class="content"><?php echo $row["view"]; ?></div>
+			<div class="detail">
+				<ul>
+					<li>公司名稱：<?php echo $row["name"]; ?></li>
+					<li>負責人&nbsp;：<?php echo $row["tanntou"]; ?></li>
+					<li>成立日期：<?php echo $row["date"]; ?></li>
+					<li>登記地址：<?php echo $row["address"]; ?></li>
+					<li>登記電話：<?php echo $row["phoneNumber"]; ?></li>
+					<li>統一編號：<?php echo $row["code"]; ?></li>
+					<li>營業時間：<?php echo $row["open"]; ?></li>
+					<li>事業內容：<?php echo $row["content"]; ?></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<?php include_once("footer.php"); ?>
 <script type="text/javascript">
 (function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/1/c/1c0aee2919d74bd98a2b4234570f1f8a/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));

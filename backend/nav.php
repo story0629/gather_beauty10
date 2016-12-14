@@ -47,16 +47,18 @@
 			<ul>
             <?php if(isset($_SESSION["USER"])){ ?>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">建案介紹</a></li>
-                <li><a href="#">最新消息</a></li>
-                <li><a href="#">關於拾美</a></li>
-                <li><a href="#">會員資料</a></li>
+                <li><a href="#">建案內容修改</a></li>
+                <!-- <li><a href="#">最新消息</a></li> -->
+                <li><a href="#">修改關於拾美</a></li>
+                <li><a href="#">修改關於拾美</a></li>
+                <li><a href="#">查看會員資料</a></li>
 				<li><a href="logout.php?logout=true">會員登出</a></li>
             <?php }else{ ?>
                 <li><a href="../index.php">HOME</a></li>
                 <li><a href="../product.php">建案介紹</a></li>
-                <li><a href="../news.php">最新消息</a></li>
-                <li><a href="../about.php">關於拾美</a></li>
+                <!-- <li><a href="../news.php">最新消息</a></li> -->
+                <!-- <li><a href="../about.php">關於拾美</a></li> -->
+                <li><a href="../fresh.php">加入我們</a></li>
                 <li><a href="login.php">會員登入</a></li>
             <?php } ?>
 			</ul>
